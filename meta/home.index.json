@@ -1,0 +1,31 @@
+{
+  "ownKey": "home",
+  "ownPages": [
+    {
+      "reference": {
+        "path": "",
+        "baseUrl": "true",
+        "fileName": "",
+        "extension": "html",
+        "usePrettyUrl": true,
+        "link": "true"
+      },
+      "description": "",
+      "title": "Home",
+      "content": ""
+    },
+    {
+      "reference": {
+        "path": "",
+        "baseUrl": "true",
+        "fileName": "404",
+        "extension": "html",
+        "usePrettyUrl": false,
+        "link": "true/404.html"
+      },
+      "description": "",
+      "title": "Not Found",
+      "content": ""
+    }
+  ]
+}

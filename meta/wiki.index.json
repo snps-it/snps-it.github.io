@@ -1,0 +1,35 @@
+{
+  "ownKey": "wiki",
+  "childrenPages": {"wiki": {
+    "ownKey": "wiki",
+    "childrenPages": {"xdbcore-ui-vista": {
+      "ownKey": "xdbcore-ui-vista",
+      "ownPages": [{
+        "reference": {
+          "path": "wiki",
+          "baseUrl": "true",
+          "fileName": "xdbcore-ui-vista",
+          "extension": "html",
+          "usePrettyUrl": true,
+          "link": "true/wiki/xdbcore-ui-vista"
+        },
+        "description": "",
+        "title": "UI Vista",
+        "content": "<h1 id=\"visualizzazione-record-vista-di-logica\"><a href=\"#visualizzazione-record-vista-di-logica\" id=\"visualizzazione-record-vista-di-logica\" class=\"anchor\"><\/a>Visualizzazione record vista di Logica<\/h1>\n<p>Questa libreria permette di visualizzare una lista di record restituiti da una qualsiasi\nvista di Logica.<\/p>\n<p><img src=\"/assets/media/uivista.gif\" alt=\"UI Vista Library\" title=\"UI Vista library\" /><\/p>\n<h2 id=\"installazione\"><a href=\"#installazione\" id=\"installazione\" class=\"anchor\"><\/a>Installazione<\/h2>\n<p>Per <strong>Groovy<\/strong><\/p>\n<pre><code class=\"language-groovy\">dependencies {\n    implementation &quot;it.snps:android-xdbcore-ui-vista:1.3.0&quot;\n    implementation &quot;it.snps:android-common:1.0.5&quot;\n}\n<\/code><\/pre>\n<p>Per <strong>Kotlin DSL<\/strong><\/p>\n<pre><code>dependencies {\n    implementation(&quot;it.snps:android-xdbcore-ui-vista:1.3.0&quot;)\n    implementation(&quot;it.snps:android-common:1.0.5&quot;)\n}\n<\/code><\/pre>\n<h2 id=\"configurazione\"><a href=\"#configurazione\" id=\"configurazione\" class=\"anchor\"><\/a>Configurazione<\/h2>\n<p>La configurazione della libreria avviene tramite il\n<a href=\"../kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/builder/vistafragment/builder\">VistaFragment.Builder<\/a>\nche viene fornito al <a href=\"../kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/vistalistfragment\">VistaListFragment<\/a>\nche si occuper� di effettuare tutte le chiamate alle API di Logica per l'estrazione dei record della Vista fornita.<\/p>\n<h3 id=\"esempio\"><a href=\"#esempio\" id=\"esempio\" class=\"anchor\"><\/a>Esempio<\/h3>\n<pre><code class=\"language-kotlin\">val builder = VistaFragment.Builder&lt;Vista&gt;()\n            // id della vista di Logica\n            .withIdVista(1)\n            // Classe che rappresenta un record\n            .withModel(Vista::class.java)\n            // Eventuale Header titolo\n            .withHeaderTitle(R.string.title)\n            // Map&lt;String, String&gt; da passare alla chiamata API (es: limit=-1)\n            .withQueryMap(emptyMap())\n           // Mostra un FAB con testo e drawable specificato in `Action`\n            .withAction(Action(text = &quot;Aggiungi&quot;,drawable = R.drawable.ic_baseline_add_24)) \n            // Mostra InputEditText per filtrare i risultati\n            .withFilter()\n            // Funzione per conversione oggetto restituito dalle API da fornire alla RecyclerView\n            .withTransformationFunction {\n                MapperContent(\n                    id = it.ID,\n                    caption = it.nome,\n                    title = it.identificativo,\n                    description = &quot;Descrizione&quot;,\n                    counter = it.ID.toString(),\n                    imageUrl = &quot;logo.jpg&quot;,\n                    originalModel = it\n                )\n            }\n            .build()\n\nval vistaFragment = VistaListFragment.newInstance(builder.build())\n\nsupportFragmentManager.beginTransaction()\n       .replace(binding.fragment.id, vistaFragment, VistaListFragment.TAG)\n       .commit()\n<\/code><\/pre>\n<h2 id=\"interfacce\"><a href=\"#interfacce\" id=\"interfacce\" class=\"anchor\"><\/a>Interfacce<\/h2>\n<p>Tutte le interfacce devono essere implementate dall'activity o fragment che utlizzano il\n<a href=\"../kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/vistalistfragment\">VistaListFragment<\/a>\nqualora vogliano usufruire di alcune operazioni.<\/p>\n<h3 id=\"paginglinster\"><a href=\"#paginglinster\" id=\"paginglinster\" class=\"anchor\"><\/a>PagingLinster<\/h3>\n<p>Da utilizzare qualora si voglia utilizzare la <a href=\"https://developer.android.com/topic/libraries/architecture/paging\">Paging Library<\/a> di Android<\/p>\n<p>API Doc: <a href=\"../kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/paginglistener\">PagingListener<\/a><\/p>\n<pre><code>    VistaFragment.Builder&lt;Vista&gt;()\n        ...\n        .withPaging()\n        .build()\n<\/code><\/pre>\n<h3 id=\"daolistener\"><a href=\"#daolistener\" id=\"daolistener\" class=\"anchor\"><\/a>DaoListener<\/h3>\n<p>Da utilizzare qualora si voglia estrarre i dati solamente da Database e, in caso di refresh della lista, venga\nfatta una sincronizzazione.<\/p>\n<p>API Doc: <a href=\"../kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/daolistener\">DaoListener<\/a><\/p>\n<h3 id=\"actionlistener\"><a href=\"#actionlistener\" id=\"actionlistener\" class=\"anchor\"><\/a>ActionListener<\/h3>\n<p>Da utilizzare qualora si voglia visualizzare un FAB per l'esecuzione di un'azione, ES: aggiunger un nuovo elemento alla lista<\/p>\n<p>API Doc: <a href=\"../kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/actionlistener\">ActionListener<\/a><\/p>\n<pre><code>    VistaFragment.Builder&lt;Vista&gt;()\n        ...\n        .withAction(Action(text = &quot;Aggiungi&quot;,drawable = R.drawable.ic_baseline_add_24))\n        .build()\n<\/code><\/pre>\n<h3 id=\"clickitemlistener\"><a href=\"#clickitemlistener\" id=\"clickitemlistener\" class=\"anchor\"><\/a>ClickItemListener<\/h3>\n<p>Da utilizzare qualora si voglia eseguire qualche operazione al click di un elemento della lista<\/p>\n<p>API Doc: <a href=\"../kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/clickitemlistener\">ClickItemListener<\/a><\/p>\n<h3 id=\"longclickitemlistener\"><a href=\"#longclickitemlistener\" id=\"longclickitemlistener\" class=\"anchor\"><\/a>LongClickItemListener<\/h3>\n<p>Da utilizzare qualora si voglia gestire il LongClick sull'elemento della lista<\/p>\n<p>API Doc: <a href=\"../kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/longclickitemlistener\">LongClickItemListener<\/a><\/p>\n"
+      }]
+    }},
+    "ownPages": [{
+      "reference": {
+        "path": "",
+        "baseUrl": "true",
+        "fileName": "wiki",
+        "extension": "html",
+        "usePrettyUrl": true,
+        "link": "true/wiki"
+      },
+      "description": "",
+      "title": "Wiki",
+      "content": "<html>\n <head><\/head>\n <body>\n  <ul> \n   <li><a href=\"true/wiki/xdbcore-ui-vista\">UI Vista<\/a><\/li> \n  <\/ul> \n <\/body>\n<\/html>\n"
+    }]
+  }}
+}

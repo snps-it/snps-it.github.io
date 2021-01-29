@@ -1,0 +1,283 @@
+{
+  "ownKey": "kotlindoc",
+  "childrenPages": {"kotlindoc": {
+    "ownKey": "kotlindoc",
+    "childrenPages": {"ui-vista": {
+      "ownKey": "ui-vista",
+      "childrenPages": {"it": {
+        "ownKey": "it",
+        "childrenPages": {"snps": {
+          "ownKey": "snps",
+          "childrenPages": {"android": {
+            "ownKey": "android",
+            "childrenPages": {"xdbcore": {
+              "ownKey": "xdbcore",
+              "childrenPages": {"ui": {
+                "ownKey": "ui",
+                "childrenPages": {"vista": {
+                  "ownKey": "vista",
+                  "childrenPages": {
+                    "interfaces": {
+                      "ownKey": "interfaces",
+                      "childrenPages": {
+                        "daolistener": {
+                          "ownKey": "daolistener",
+                          "ownPages": [{
+                            "reference": {
+                              "path": "kotlindoc/ui-vista",
+                              "baseUrl": "true",
+                              "fileName": "it/snps/android/xdbcore/ui/vista/interfaces/daolistener",
+                              "extension": "html",
+                              "usePrettyUrl": true,
+                              "link": "true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/daolistener"
+                            },
+                            "description": "",
+                            "title": "DaoListener",
+                            "content": "<p>Interfaccia da utilizzare qualora si vogliano estrarre i dati dal Database Room e\nin caso di refresh della lista venga sincronizzato<\/p>onGetListElement\n<p>Invocato quando vengono richiesti i dati dal Database<\/p>\nonRefreshElements\n<p>Invocato quando viene richiesto di sincronizzare il Database.\nVengono cancellati tutti i record e re-inseriti<\/p>\n"
+                          }]
+                        },
+                        "clickitemlistener": {
+                          "ownKey": "clickitemlistener",
+                          "ownPages": [{
+                            "reference": {
+                              "path": "kotlindoc/ui-vista",
+                              "baseUrl": "true",
+                              "fileName": "it/snps/android/xdbcore/ui/vista/interfaces/clickitemlistener",
+                              "extension": "html",
+                              "usePrettyUrl": true,
+                              "link": "true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/clickitemlistener"
+                            },
+                            "description": "",
+                            "title": "ClickItemListener",
+                            "content": "<p>Interfaccia da utilizzare quando si vuole gestire il click su un elemento della lista<\/p>onItemClick\n<p>Invocato quando l'utente clicca su un elemento della lista<\/p>\n"
+                          }]
+                        },
+                        "actionlistener": {
+                          "ownKey": "actionlistener",
+                          "ownPages": [{
+                            "reference": {
+                              "path": "kotlindoc/ui-vista",
+                              "baseUrl": "true",
+                              "fileName": "it/snps/android/xdbcore/ui/vista/interfaces/actionlistener",
+                              "extension": "html",
+                              "usePrettyUrl": true,
+                              "link": "true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/actionlistener"
+                            },
+                            "description": "",
+                            "title": "ActionListener",
+                            "content": "<p>Interfaccia da utilizzare qualora si voglia mostrare un FAB nella lista per eseguire una\ndeterminata azione, ES: aggiungere un nuovo elemento alla lista<\/p>onClickAction\n<p>Invocata quando viene cliccato il FAB presente nella lista<\/p>\n"
+                          }]
+                        },
+                        "longclickitemlistener": {
+                          "ownKey": "longclickitemlistener",
+                          "ownPages": [{
+                            "reference": {
+                              "path": "kotlindoc/ui-vista",
+                              "baseUrl": "true",
+                              "fileName": "it/snps/android/xdbcore/ui/vista/interfaces/longclickitemlistener",
+                              "extension": "html",
+                              "usePrettyUrl": true,
+                              "link": "true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/longclickitemlistener"
+                            },
+                            "description": "",
+                            "title": "LongClickItemListener",
+                            "content": "<p>Interfaccia da utilizzare qualora si voglia gestire il LongClick sull'elemento della lista<\/p>onItemLongClick\n<p>Invocato quando l'utente effettua un LongClick sull'elemento della lista<\/p>\n"
+                          }]
+                        },
+                        "paginglistener": {
+                          "ownKey": "paginglistener",
+                          "ownPages": [{
+                            "reference": {
+                              "path": "kotlindoc/ui-vista",
+                              "baseUrl": "true",
+                              "fileName": "it/snps/android/xdbcore/ui/vista/interfaces/paginglistener",
+                              "extension": "html",
+                              "usePrettyUrl": true,
+                              "link": "true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/paginglistener"
+                            },
+                            "description": "",
+                            "title": "PagingListener",
+                            "content": "<p>Interfaccia da utilizzare qualora si voglia usufruire della\n<a href=\"https://developer.android.com/topic/libraries/architecture/paging\">Paging Library<\/a><\/p><p>Il pattern utilizzato: <a href=\"https://developer.android.com/topic/libraries/architecture/paging#network-with-database-data-arch\">NETWORK + DB<\/a><\/p>onGetListElement\n<p>Invocato per estrarre gli elementi dal Database<\/p>\nonInsertElements\n<p>Invocato per inserire gli elementi ritornati dalle API nel Database<\/p>\nonDeleteData\n<p>Invocato quando viene effeettuato un refresh dei dati.\nViene cancellato il contenuto del Database e ripopolato<\/p>\n"
+                          }]
+                        }
+                      },
+                      "ownPages": [{
+                        "reference": {
+                          "path": "kotlindoc/ui-vista",
+                          "baseUrl": "true",
+                          "fileName": "it/snps/android/xdbcore/ui/vista/interfaces",
+                          "extension": "html",
+                          "usePrettyUrl": true,
+                          "link": "true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces"
+                        },
+                        "description": "",
+                        "title": "it.snps.android.xdbcore.ui.vista.interfaces",
+                        "content": "<p>ActionListener<\/p>\n<p>Interfaccia da utilizzare qualora si voglia mostrare un FAB nella lista per eseguire una\ndeterminata azione, ES: aggiungere un nuovo elemento alla lista<\/p>\nClickItemListener\n<p>Interfaccia da utilizzare quando si vuole gestire il click su un elemento della lista<\/p>\nDaoListener\n<p>Interfaccia da utilizzare qualora si vogliano estrarre i dati dal Database Room e\nin caso di refresh della lista venga sincronizzato<\/p>\nLongClickItemListener\n<p>Interfaccia da utilizzare qualora si voglia gestire il LongClick sull'elemento della lista<\/p>\nPagingListener\n<p>Interfaccia da utilizzare qualora si voglia usufruire della\n<a href=\"https://developer.android.com/topic/libraries/architecture/paging\">Paging Library<\/a><\/p><p>Il pattern utilizzato: <a href=\"https://developer.android.com/topic/libraries/architecture/paging#network-with-database-data-arch\">NETWORK + DB<\/a><\/p>\n"
+                      }]
+                    },
+                    "builder": {
+                      "ownKey": "builder",
+                      "childrenPages": {"vistafragment": {
+                        "ownKey": "vistafragment",
+                        "childrenPages": {"builder": {
+                          "ownKey": "builder",
+                          "ownPages": [{
+                            "reference": {
+                              "path": "kotlindoc/ui-vista",
+                              "baseUrl": "true",
+                              "fileName": "it/snps/android/xdbcore/ui/vista/builder/vistafragment/builder",
+                              "extension": "html",
+                              "usePrettyUrl": true,
+                              "link": "true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/builder/vistafragment/builder"
+                            },
+                            "description": "",
+                            "title": "Builder",
+                            "content": "<p>Builder da fornire alla creazione del <code>VistaListFragment<\/code> per la visualizzazione\ndei record di una vista di Logica<\/p><init>\n<p>Builder da fornire alla creazione del <code>VistaListFragment<\/code> per la visualizzazione\ndei record di una vista di Logica<\/p>\nwithIdVista\n\nwithModel\n\nwithTransformationFunction\n\nwithQueryMap\n<p>Eventuale parametri da fornire alla chiamata alle API<\/p>\nwithAction\n<p>Se fornito viene mostrato un FAB<\/p>\nwithHeaderTitle\n<p>Se fornito mostra il titolo della lista<\/p>\nwithFilter\n<p>Se fornito un <a href=\"https://developer.android.com/reference/android/widget/EditText\">EditText<\/a>\nche permette di filtrare i record della vista<\/p>\nwithPaging\n<p>Se fornito viene utilizzata la libreria <a href=\"https://developer.android.com/topic/libraries/architecture/paging\">Paging<\/a>\nche carica i dati sia da Network che da DB Room<\/p>\nbuild\n\n"
+                          }]
+                        }},
+                        "ownPages": [{
+                          "reference": {
+                            "path": "kotlindoc/ui-vista",
+                            "baseUrl": "true",
+                            "fileName": "it/snps/android/xdbcore/ui/vista/builder/vistafragment",
+                            "extension": "html",
+                            "usePrettyUrl": true,
+                            "link": "true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/builder/vistafragment"
+                          },
+                          "description": "",
+                          "title": "VistaFragment",
+                          "content": "<p>idVista<\/p>\n<p>model<\/p>\n<p>trasformationFunction<\/p>\n<p>queryParameter<\/p>\n<p>action<\/p>\n<p>headerTitle<\/p>\n<p>showFilter<\/p>\n<p>pagingEnabled<\/p>\n"
+                        }]
+                      }},
+                      "ownPages": [{
+                        "reference": {
+                          "path": "kotlindoc/ui-vista",
+                          "baseUrl": "true",
+                          "fileName": "it/snps/android/xdbcore/ui/vista/builder",
+                          "extension": "html",
+                          "usePrettyUrl": true,
+                          "link": "true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/builder"
+                        },
+                        "description": "",
+                        "title": "it.snps.android.xdbcore.ui.vista.builder",
+                        "content": "<p>VistaFragment<\/p>\n"
+                      }]
+                    },
+                    "model": {
+                      "ownKey": "model",
+                      "childrenPages": {
+                        "action": {
+                          "ownKey": "action",
+                          "ownPages": [{
+                            "reference": {
+                              "path": "kotlindoc/ui-vista",
+                              "baseUrl": "true",
+                              "fileName": "it/snps/android/xdbcore/ui/vista/model/action",
+                              "extension": "html",
+                              "usePrettyUrl": true,
+                              "link": "true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/model/action"
+                            },
+                            "description": "",
+                            "title": "Action",
+                            "content": "<p>Classe utilizzata per indicare l'eventuale azione si vuole mostrare nella lista\ndei record<\/p>drawable\n<p>ID del drawable da visualizzare (R.drawable.<a href=\"#\">nome<\/a><\/p>\ntext\n<p>testo da visualizzare nel FAB<\/p>\n<init>\n<p>Classe utilizzata per indicare l'eventuale azione si vuole mostrare nella lista\ndei record<\/p>\n"
+                          }]
+                        },
+                        "mappercontent": {
+                          "ownKey": "mappercontent",
+                          "ownPages": [{
+                            "reference": {
+                              "path": "kotlindoc/ui-vista",
+                              "baseUrl": "true",
+                              "fileName": "it/snps/android/xdbcore/ui/vista/model/mappercontent",
+                              "extension": "html",
+                              "usePrettyUrl": true,
+                              "link": "true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/model/mappercontent"
+                            },
+                            "description": "",
+                            "title": "MapperContent",
+                            "content": "<p>Classe utilizzata dall'adapter della lista<\/p>id\n<p>ID del record<\/p>\ncaption\n<p>testo da mostrare nel campo <code>caption<\/code> del layout<\/p>\ntitle\n<p>testo da mostrare nel campo <code>title<\/code> del layout<\/p>\ndescription\n<p>testo da mostrare nel campo <code>description<\/code> del layout<\/p>\ncounter\n<p>testo da mostrare nel campo <code>counter<\/code> del layout<\/p>\nimageUrl\n<p>eventuale url dalla qualde effettuare il download dell'immagine<\/p>\noriginalModel\n<p>Model originale dalla risposta delle API. Utilizzato in LongClik e ClickItem<\/p>\n<init>\n<p>Classe utilizzata dall'adapter della lista<\/p>\n"
+                          }]
+                        }
+                      },
+                      "ownPages": [{
+                        "reference": {
+                          "path": "kotlindoc/ui-vista",
+                          "baseUrl": "true",
+                          "fileName": "it/snps/android/xdbcore/ui/vista/model",
+                          "extension": "html",
+                          "usePrettyUrl": true,
+                          "link": "true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/model"
+                        },
+                        "description": "",
+                        "title": "it.snps.android.xdbcore.ui.vista.model",
+                        "content": "<p>Action<\/p>\n<p>Classe utilizzata per indicare l'eventuale azione si vuole mostrare nella lista\ndei record<\/p>\nMapperContent\n<p>Classe utilizzata dall'adapter della lista<\/p>\n"
+                      }]
+                    },
+                    "repository": {
+                      "ownKey": "repository",
+                      "childrenPages": {"vistarepository": {
+                        "ownKey": "vistarepository",
+                        "ownPages": [{
+                          "reference": {
+                            "path": "kotlindoc/ui-vista",
+                            "baseUrl": "true",
+                            "fileName": "it/snps/android/xdbcore/ui/vista/repository/vistarepository",
+                            "extension": "html",
+                            "usePrettyUrl": true,
+                            "link": "true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/repository/vistarepository"
+                          },
+                          "description": "",
+                          "title": "VistaRepository",
+                          "content": "<p>Repository utilizzato per effettuare le chiamate alle API di Logica<\/p><init>\n<p>Repository utilizzato per effettuare le chiamate alle API di Logica<\/p>\nsynchronizeVistaElement\n<p>Effettua la sincronizzazione degli elementi ritornati dal Back-End con il Database.\nVengono eliminati tutti i record su DB e vengono inseriti i record restituiti dal Back-End<\/p>\ngetVistaElements\n<p>Effettua la chiamata alle API di Logica restituendo la lista degli elementi ritornati dal\nBack-End<\/p>\ngetVistaElementsFromDB\n<p>Effettua la query sul DB per l'estrazione dei record<\/p>\ngetVistaElementsPaging\n<p>Identico al metodo  getVistaElements  ma configura un <a href=\"https://developer.android.com/reference/androidx/paging/PagedList.BoundaryCallback\">Boundary<\/a>\nper l'utilizzo della <a href=\"https://developer.android.com/topic/libraries/architecture/paging\">Paging Library<\/a><\/p>\ndeleteAllData\n<p>Elimina tutti i record presenti sul Database Room<\/p>\ngetElements\n\nsaveToDB\n\n"
+                        }]
+                      }},
+                      "ownPages": [{
+                        "reference": {
+                          "path": "kotlindoc/ui-vista",
+                          "baseUrl": "true",
+                          "fileName": "it/snps/android/xdbcore/ui/vista/repository",
+                          "extension": "html",
+                          "usePrettyUrl": true,
+                          "link": "true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/repository"
+                        },
+                        "description": "",
+                        "title": "it.snps.android.xdbcore.ui.vista.repository",
+                        "content": "<p>VistaRepository<\/p>\n<p>Repository utilizzato per effettuare le chiamate alle API di Logica<\/p>\n"
+                      }]
+                    }
+                  },
+                  "ownPages": [{
+                    "reference": {
+                      "path": "kotlindoc/ui-vista",
+                      "baseUrl": "true",
+                      "fileName": "it/snps/android/xdbcore/ui/vista",
+                      "extension": "html",
+                      "usePrettyUrl": true,
+                      "link": "true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista"
+                    },
+                    "description": "",
+                    "title": "it.snps.android.xdbcore.ui.vista",
+                    "content": "<p>it.snps.android.xdbcore.ui.vista.builder<\/p>\n<p>it.snps.android.xdbcore.ui.vista.interfaces<\/p>\n<p>it.snps.android.xdbcore.ui.vista.model<\/p>\n<p>it.snps.android.xdbcore.ui.vista.repository<\/p>\n"
+                  }]
+                }}
+              }}
+            }}
+          }}
+        }}
+      }},
+      "ownPages": [{
+        "reference": {
+          "path": "kotlindoc",
+          "baseUrl": "true",
+          "fileName": "ui-vista",
+          "extension": "html",
+          "usePrettyUrl": true,
+          "link": "true/kotlindoc/ui-vista"
+        },
+        "description": "",
+        "title": "andorid-xdbcore-ui-vista",
+        "content": "<h1 id=\"xdbcore-logica-android\"><a href=\"#xdbcore-logica-android\" id=\"xdbcore-logica-android\" class=\"anchor\"><\/a>XDBCore Logica Android<\/h1>\n<p>Raccolta di librerie per lo sviluppo di applicazioni Android per Logica<\/p>\n<h3 id=\"publishing\"><a href=\"#publishing\" id=\"publishing\" class=\"anchor\"><\/a>Publishing<\/h3>\n<p>Le librerie raccolte in questo progetto sono pronte per essere pubblicate nel repository di Nexus di Sinapsi.<\/p>\n<p>Per procedere alla pubblicazione di tali librerie bisogna che all'interno del progetto sia presente il file <code>settings.properties<\/code> contenente le informazioni necessarie per la pubblicazione e il download delle librerie dal repository Nexus<\/p>\n<p>Il contenuto di tale file � composto da coppie <strong>chiave-valore<\/strong> come da esempio:<\/p>\n<pre><code>nexusRepoReleases=[url repository di RELEASE]  \nnexusRepoSnapshots=[url repository di SNAPSHOTS]\nnexusUsername=[username per l'autenticazione al repository]\nnexusPassword=[password per l'autenticazione al repository]\n<\/code><\/pre>\n<h3 id=\"download-delle-librerie-da-repository-nexus\"><a href=\"#download-delle-librerie-da-repository-nexus\" id=\"download-delle-librerie-da-repository-nexus\" class=\"anchor\"><\/a>Download delle librerie da repository Nexus<\/h3>\n<p>Per poter effettuare il download delle librerie dal repository Nexus bisogna per prima cosa assicurarsi di aver inserito nella <code>root<\/code> del progetto il file <code>settings.properties<\/code>.<\/p>\n<h4 id=\"settingsproperties\"><a href=\"#settingsproperties\" id=\"settingsproperties\" class=\"anchor\"><\/a>settings.properties<\/h4>\n<p>Il contenuto del file deve essere come segue:<\/p>\n<pre><code>nexusRepoPublic=[url repository public]\nnexusUsername=[username per l'autenticazione al repository]\nnexusPassword=[password per l'autenticazione al repository]\n<\/code><\/pre>\n<h4 id=\"buildgradlekts-project-level\"><a href=\"#buildgradlekts-project-level\" id=\"buildgradlekts-project-level\" class=\"anchor\"><\/a>build.gradle.kts project level<\/h4>\n<p>All'interno del file <code>build.gradle.kts<\/code> bisogna andare ad indicare il repository Nexus dalla quale effettuare il download delle librerie pubblicate in precedenza:<\/p>\n<pre><code>// getting properties of Nexus repository\nval fileProp = java.io.FileInputStream(&quot;$rootDir/settings.properties&quot;)\nval prop = java.util.Properties()\nprop.load(fileProp)\n\nallprojects {\n    repositories {\n        ...\n        maven {\n            url = uri(prop.getProperty(&quot;nexusRepoPublic&quot;))\n            credentials {\n                username = prop.getProperty(&quot;nexusUsername&quot;)\n                password = prop.getProperty(&quot;nexusPassword&quot;)\n            }\n\n            authentication {\n                create&lt;BasicAuthentication&gt;(&quot;basic&quot;)\n            }\n        }\n    }\n}\n<\/code><\/pre>\n<h4 id=\"buildgradlekts-module-level\"><a href=\"#buildgradlekts-module-level\" id=\"buildgradlekts-module-level\" class=\"anchor\"><\/a>build.gradle.kts module level<\/h4>\n<p>All'interno di ogni <code>build.gradle.kts<\/code> presente nel modulo inserire nella sezione <code>dependencies<\/code> l'url della libreria da scaricare con la relativa versione, esempio:\n<code>implementation(&quot;it.snps:[library]:[versione]&quot;)<\/code><\/p>\n"
+      }]
+    }}
+  }}
+}

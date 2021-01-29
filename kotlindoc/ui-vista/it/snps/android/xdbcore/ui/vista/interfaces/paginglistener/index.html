@@ -1,0 +1,641 @@
+<!DOCTYPE HTML>
+<!--
+    Editorial by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+
+
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 0.21.0"/>
+<link rel="icon" href="true/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>PagingListener</title>
+
+
+<meta name="description" content="Librerie Android">
+
+
+
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="true/Editorial/39b67a80/assets/css/editorial_main.css"  />
+<link rel="stylesheet" type="text/css" href="true/Editorial/39b67a80/assets/css/editorial_orchidCustomizations.css"  />
+<link rel="stylesheet" type="text/css" href="true/Editorial/39b67a80/assets/css/orchidSearch.css"  />
+<link rel="stylesheet" type="text/css" href="true/assets/css/orchidSearch.css"  />
+<link rel="stylesheet" type="text/css" href="true/assets/css/orchidSourceDoc.css"  />
+<!-- end:inject styles -->
+
+
+
+
+
+<!-- start:debug info -->
+
+<!-- THEME -->
+<!-- Type: Editorial -->
+<!-- Class: com.eden.orchid.editorial.EditorialTheme -->
+
+<!-- PAGE -->
+<!-- Type: classes -->
+<!-- Class: com.eden.orchid.sourcedoc.page.SourceDocPage -->
+<!-- Layout: index -->
+<!-- Resolved Layout: templates/layouts/index.peb -->
+<!-- Page Template: kotlindocInterface, sourceDocPage, classes, page -->
+<!-- Resolved Page Template: templates/pages/sourceDocPage.peb -->
+
+<!-- RESOURCE -->
+<!-- Class: com.eden.orchid.sourcedoc.page.SourceDocResource -->
+<!-- Source Filename:  -->
+
+<!-- COMPLETE PAGE CONFIGURATION -->
+<script>
+    window.allData = {"reference":{"path":"kotlindoc/ui-vista","baseUrl":"true","fileName":"it/snps/android/xdbcore/ui/vista/interfaces/paginglistener","extension":"html","usePrettyUrl":true,"link":"true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/paginglistener"},"description":"","title":"PagingListener"};
+</script>
+
+<!-- end:debug info -->
+
+
+
+<script>
+    window.site = {"orchidVersion":"0.21.0","baseUrl":"true","environment":"debug","version":"1.0.0"};
+</script>
+
+
+    <!-- start:inject meta-components [head] -->
+    
+
+        
+            
+        
+
+        
+            
+        
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+    <!-- start:inject meta-components [head] -->
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+
+
+
+
+</head>
+<body class="is-loading">
+
+
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+
+            <!-- Header -->
+            
+                <header id="header">
+    <a href="true" class="logo">XDBCore Logica Android</a>
+    <ul class="icons">
+    
+    
+        <li>
+            <a href="https://github.com/snps-it/xdbcore-logica-android" class="icon fa-github">
+                <span class="label">github</span>
+            </a>
+        </li>
+    
+    
+    </ul>
+</header>
+
+            
+            
+            
+            
+                <section id="pageContent">
+                    <header class="major"><h2>PagingListener</h2></header>
+                    <article>
+                        
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        <div class="sourcedoc-page orchid-sourcedoc content">
+  
+<div class="sourcedoc-section section-root section-level-1" id="PagingListener">
+
+
+  
+
+  
+    <div class="sourcedoc-section section-element" id="59be09fc2acf9187f45115ec1182680bfebb1721">
+      
+      <p class="sourcedoc-section section-signature">
+        <code>interface PagingListener: Any</code>
+      </p>
+
+      
+        
+    <!-- start:inject components -->
+    
+    <!-- end:inject components -->
+
+
+      
+
+      <div class="sourcedoc-section section-comments"><p>Interfaccia da utilizzare qualora si voglia usufruire della
+<a href="https://developer.android.com/topic/libraries/architecture/paging">Paging Library</a></p><p>Il pattern utilizzato: <a href="https://developer.android.com/topic/libraries/architecture/paging#network-with-database-data-arch">NETWORK + DB</a></p>
+</div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-2" id="methods">
+
+
+  
+    <h2 class="sourcedoc-section section-name">Methods</h2>
+  
+
+  
+    <div class="sourcedoc-section section-element" id="c609479d6b8c3fbd0c5f3444adacdf8166c7c38e">
+      
+      <h3 class="sourcedoc-section element-name">onGetListElement</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>abstract fun onGetListElement(): DataSource.Factory<Int, Any>&lt;Int, Any&gt;</code>
+      </p>
+
+      
+
+      <div class="sourcedoc-section section-comments"><p>Invocato per estrarre gli elementi dal Database</p>
+</div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="2a8839de38f2dc255ded8071728ae2facfd7895b">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="ae1a29892f00153ae2c990f41a636449e20ab16e">
+        <td class="sourcedoc-section section-signature">
+          <code>DataSource.Factory<Int, Any>&lt;Int, Any&gt;</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        <p><a href="https://developer.android.com/reference/androidx/paging/DataSource.Factory">DataSource.Factory&lt;Int, Any&gt;</a></p>
+
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+    <div class="sourcedoc-section section-element" id="ed849b7b52e257af67deb31982729005ce0301ba">
+      
+      <h3 class="sourcedoc-section element-name">onInsertElements</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>abstract suspend fun onInsertElements(elements: List&lt;Any&gt;)</code>
+      </p>
+
+      
+
+      <div class="sourcedoc-section section-comments"><p>Invocato per inserire gli elementi ritornati dalle API nel Database</p>
+</div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="b99d04831c689a4b57543d6580c085afd64ac607">
+
+
+  <p class="sourcedoc-section section-name"><strong>Parameters</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="8e5f03544579f556e46902c9abdb876929bb68e8">
+        <td class="sourcedoc-section section-signature">
+          <code>elements: List&lt;Any&gt;</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        <p>Lista dei risultati della chiamata alle API</p>
+
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="d23e95e57d9b2a9908f7be8c966ba7d82b86a378">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="f6b935ab337145efdeadda28cae18aa89a845e36">
+        <td class="sourcedoc-section section-signature">
+          <code>Unit</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+    <div class="sourcedoc-section section-element" id="ea2dda9166de9aa75194272d187e540b6c355749">
+      
+      <h3 class="sourcedoc-section element-name">onDeleteData</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>abstract suspend fun onDeleteData()</code>
+      </p>
+
+      
+
+      <div class="sourcedoc-section section-comments"><p>Invocato quando viene effeettuato un refresh dei dati.
+Viene cancellato il contenuto del Database e ripopolato</p>
+</div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="7077b40ef218d4eaf08a14b0df81f54a4038487b">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="f6b935ab337145efdeadda28cae18aa89a845e36">
+        <td class="sourcedoc-section section-signature">
+          <code>Unit</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+
+</div>
+
+        
+      
+    </div>
+  
+
+</div>
+
+</div>
+
+
+
+
+
+
+                    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+                    </article>
+                </section>
+            
+        </div>
+        <hr>
+
+        <!-- Page Footer -->
+        <div class="inner">
+    <footer id="footer">
+        <div class="clearfix">
+            
+            
+        </div>
+    </footer>
+</div>
+
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+    <div class="inner">
+
+        <!-- Search -->
+        <section id="search" class="alt">
+            <form data-orchid-search="">
+                <input type="text" name="query" id="query" placeholder="Search"/>
+            </form>
+            <div class="box" id="search-results" data-orchid-search-results style="display: none;">
+                <b>Search Results</b>
+                <ul></ul>
+            </div>
+            <div class="box" id="search-progress" data-orchid-search-progress style="display: none;">
+                <div class="loader">Loading...</div>
+            </div>
+        </section>
+
+        <!-- Menu -->
+        <nav id="siteNav" class="menu">
+            <header class="major">
+                <h2>XDBCore Logica Android</h2>
+            </header>
+            <ul class="top-level">
+                
+                    
+    
+    <li>
+        <a class="subheader">Wiki</a>
+    </li>
+    
+
+                
+                    
+    
+    <li>
+        <a href="true/wiki/xdbcore-ui-vista">UI Vista</a>
+    </li>
+    
+
+                
+                    
+    
+    <li>
+        <a class="subheader">API Docs</a>
+    </li>
+    
+
+                
+                    
+    <li>
+        <span class="opener">Classes</span>
+        <ul>
+        
+            
+    
+    <li>
+        <a href="true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/model/action">Action</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/actionlistener">ActionListener</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/builder/vistafragment/builder">Builder</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/clickitemlistener">ClickItemListener</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/daolistener">DaoListener</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/longclickitemlistener">LongClickItemListener</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/model/mappercontent">MapperContent</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/paginglistener">PagingListener</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/builder/vistafragment">VistaFragment</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="true/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/repository/vistarepository">VistaRepository</a>
+    </li>
+    
+
+        
+        </ul>
+    </li>
+
+                
+            </ul>
+        </nav>
+        
+
+        <!-- Section -->
+        <section>
+            <p class="text-center">
+                Currently 1.0.0. Created with <a href="https://orchid.run">Orchid </a> and <b>Orchid Editorial Theme</b>.
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p class="copyright text-center">&copy; XDBCore Logica Android. All rights reserved.<br>Design by <a href="https://html5up.net">HTML5 UP</a></p>
+        </footer>
+
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+
+<!-- start:inject scripts -->
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+<script  src="true/Editorial/39b67a80/assets/js/editorial_util.js"></script>
+<script  src="true/Editorial/39b67a80/assets/js/editorial_main.js"></script>
+<script  src="true/Editorial/39b67a80/assets/js/editorial_orchidCustomizations.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script  src="https://unpkg.com/lunr/lunr.js"></script>
+<script  src="true/assets/js/orchidSearch.js"></script>
+<!-- end:inject scripts -->
+
+
+</body>
+</html>
