@@ -7,11 +7,11 @@
       "ownPages": [{
         "reference": {
           "path": "wiki",
-          "baseUrl": "true",
+          "baseUrl": "https://snps-it.github.io/",
           "fileName": "xdbcore-ui-vista",
           "extension": "html",
           "usePrettyUrl": true,
-          "link": "true/wiki/xdbcore-ui-vista"
+          "link": "https://snps-it.github.io//wiki/xdbcore-ui-vista"
         },
         "description": "",
         "title": "UI Vista",
@@ -21,15 +21,15 @@
     "ownPages": [{
       "reference": {
         "path": "",
-        "baseUrl": "true",
+        "baseUrl": "https://snps-it.github.io/",
         "fileName": "wiki",
         "extension": "html",
         "usePrettyUrl": true,
-        "link": "true/wiki"
+        "link": "https://snps-it.github.io//wiki"
       },
       "description": "",
       "title": "Wiki",
-      "content": "<html>\n <head><\/head>\n <body>\n  <ul> \n   <li><a href=\"true/wiki/xdbcore-ui-vista\">UI Vista<\/a><\/li> \n  <\/ul> \n <\/body>\n<\/html>\n"
+      "content": "<html>\n <head><\/head>\n <body>\n  <ul> \n   <li><a href=\"https://snps-it.github.io//wiki/xdbcore-ui-vista\">UI Vista<\/a><\/li> \n  <\/ul> \n <\/body>\n<\/html>\n"
     }]
   }}
 }

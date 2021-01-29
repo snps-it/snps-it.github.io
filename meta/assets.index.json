@@ -7,11 +7,11 @@
       "ownPages": [{
         "reference": {
           "path": "assets/media",
-          "baseUrl": "true",
+          "baseUrl": "https://snps-it.github.io/",
           "fileName": "uivista",
           "extension": "gif",
           "usePrettyUrl": false,
-          "link": "true/assets/media/uivista.gif"
+          "link": "https://snps-it.github.io//assets/media/uivista.gif"
         },
         "description": "",
         "title": "uivista",

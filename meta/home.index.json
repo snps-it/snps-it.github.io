@@ -4,11 +4,11 @@
     {
       "reference": {
         "path": "",
-        "baseUrl": "true",
+        "baseUrl": "https://snps-it.github.io/",
         "fileName": "",
         "extension": "html",
         "usePrettyUrl": true,
-        "link": "true"
+        "link": "https://snps-it.github.io/"
       },
       "description": "",
       "title": "Home",
@@ -17,11 +17,11 @@
     {
       "reference": {
         "path": "",
-        "baseUrl": "true",
+        "baseUrl": "https://snps-it.github.io/",
         "fileName": "404",
         "extension": "html",
         "usePrettyUrl": false,
-        "link": "true/404.html"
+        "link": "https://snps-it.github.io//404.html"
       },
       "description": "",
       "title": "Not Found",
