@@ -4,5 +4,5 @@ Disallow: /
 
 
 
-Sitemap: https://snps-it.github.io//sitemap.xml
+Sitemap: https://snps-it.github.io/sitemap.xml
 

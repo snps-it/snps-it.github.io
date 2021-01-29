@@ -4,12 +4,12 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://snps-it.github.io//wiki</loc>
+        <loc>https://snps-it.github.io/wiki</loc>
         <lastmod>2021-01-29</lastmod>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://snps-it.github.io//wiki/xdbcore-ui-vista</loc>
+        <loc>https://snps-it.github.io/wiki/xdbcore-ui-vista</loc>
         <lastmod>2021-01-29</lastmod>
         <priority>0.5</priority>
     </url>

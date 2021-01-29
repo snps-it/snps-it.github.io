@@ -4,43 +4,43 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd"
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <sitemap>
-        <loc>https://snps-it.github.io//sitemap-assets.xml</loc>
+        <loc>https://snps-it.github.io/sitemap-assets.xml</loc>
         <lastmod>2021-01-29</lastmod>
     </sitemap>
     <sitemap>
-        <loc>https://snps-it.github.io//sitemap-external.xml</loc>
+        <loc>https://snps-it.github.io/sitemap-external.xml</loc>
         <lastmod>2021-01-29</lastmod>
     </sitemap>
     <sitemap>
-        <loc>https://snps-it.github.io//sitemap-changelog.xml</loc>
+        <loc>https://snps-it.github.io/sitemap-changelog.xml</loc>
         <lastmod>2021-01-29</lastmod>
     </sitemap>
     <sitemap>
-        <loc>https://snps-it.github.io//sitemap-forms.xml</loc>
+        <loc>https://snps-it.github.io/sitemap-forms.xml</loc>
         <lastmod>2021-01-29</lastmod>
     </sitemap>
     <sitemap>
-        <loc>https://snps-it.github.io//sitemap-home.xml</loc>
+        <loc>https://snps-it.github.io/sitemap-home.xml</loc>
         <lastmod>2021-01-29</lastmod>
     </sitemap>
     <sitemap>
-        <loc>https://snps-it.github.io//sitemap-kotlindoc.xml</loc>
+        <loc>https://snps-it.github.io/sitemap-kotlindoc.xml</loc>
         <lastmod>2021-01-29</lastmod>
     </sitemap>
     <sitemap>
-        <loc>https://snps-it.github.io//sitemap-pages.xml</loc>
+        <loc>https://snps-it.github.io/sitemap-pages.xml</loc>
         <lastmod>2021-01-29</lastmod>
     </sitemap>
     <sitemap>
-        <loc>https://snps-it.github.io//sitemap-wiki.xml</loc>
+        <loc>https://snps-it.github.io/sitemap-wiki.xml</loc>
         <lastmod>2021-01-29</lastmod>
     </sitemap>
     <sitemap>
-        <loc>https://snps-it.github.io//sitemap-sitemap.xml</loc>
+        <loc>https://snps-it.github.io/sitemap-sitemap.xml</loc>
         <lastmod>2021-01-29</lastmod>
     </sitemap>
     <sitemap>
-        <loc>https://snps-it.github.io//sitemap-indices.xml</loc>
+        <loc>https://snps-it.github.io/sitemap-indices.xml</loc>
         <lastmod>2021-01-29</lastmod>
     </sitemap>
 </sitemapindex>

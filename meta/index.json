@@ -10,7 +10,7 @@
           "fileName": "assets.index",
           "extension": "json",
           "usePrettyUrl": false,
-          "link": "https://snps-it.github.io//meta/assets.index.json"
+          "link": "https://snps-it.github.io/meta/assets.index.json"
         },
         "description": "",
         "title": "Assets . Index"
@@ -22,7 +22,7 @@
           "fileName": "changelog.index",
           "extension": "json",
           "usePrettyUrl": false,
-          "link": "https://snps-it.github.io//meta/changelog.index.json"
+          "link": "https://snps-it.github.io/meta/changelog.index.json"
         },
         "description": "",
         "title": "Changelog . Index"
@@ -34,7 +34,7 @@
           "fileName": "forms.index",
           "extension": "json",
           "usePrettyUrl": false,
-          "link": "https://snps-it.github.io//meta/forms.index.json"
+          "link": "https://snps-it.github.io/meta/forms.index.json"
         },
         "description": "",
         "title": "Forms . Index"
@@ -46,7 +46,7 @@
           "fileName": "home.index",
           "extension": "json",
           "usePrettyUrl": false,
-          "link": "https://snps-it.github.io//meta/home.index.json"
+          "link": "https://snps-it.github.io/meta/home.index.json"
         },
         "description": "",
         "title": "Home . Index"
@@ -58,7 +58,7 @@
           "fileName": "kotlindoc.index",
           "extension": "json",
           "usePrettyUrl": false,
-          "link": "https://snps-it.github.io//meta/kotlindoc.index.json"
+          "link": "https://snps-it.github.io/meta/kotlindoc.index.json"
         },
         "description": "",
         "title": "Kotlindoc . Index"
@@ -70,7 +70,7 @@
           "fileName": "pages.index",
           "extension": "json",
           "usePrettyUrl": false,
-          "link": "https://snps-it.github.io//meta/pages.index.json"
+          "link": "https://snps-it.github.io/meta/pages.index.json"
         },
         "description": "",
         "title": "Pages . Index"
@@ -82,7 +82,7 @@
           "fileName": "wiki.index",
           "extension": "json",
           "usePrettyUrl": false,
-          "link": "https://snps-it.github.io//meta/wiki.index.json"
+          "link": "https://snps-it.github.io/meta/wiki.index.json"
         },
         "description": "",
         "title": "Wiki . Index"
@@ -94,7 +94,7 @@
           "fileName": "sitemap.index",
           "extension": "json",
           "usePrettyUrl": false,
-          "link": "https://snps-it.github.io//meta/sitemap.index.json"
+          "link": "https://snps-it.github.io/meta/sitemap.index.json"
         },
         "description": "",
         "title": "Sitemap . Index"
@@ -106,7 +106,7 @@
           "fileName": "indices.index",
           "extension": "json",
           "usePrettyUrl": false,
-          "link": "https://snps-it.github.io//meta/indices.index.json"
+          "link": "https://snps-it.github.io/meta/indices.index.json"
         },
         "description": "",
         "title": "Indices . Index"
@@ -118,7 +118,7 @@
           "fileName": "all.index",
           "extension": "json",
           "usePrettyUrl": false,
-          "link": "https://snps-it.github.io//meta/all.index.json"
+          "link": "https://snps-it.github.io/meta/all.index.json"
         },
         "description": "",
         "title": "All . Index"

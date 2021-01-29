@@ -30,7 +30,7 @@
                                 "fileName": "it/snps/android/xdbcore/ui/vista/interfaces/daolistener",
                                 "extension": "html",
                                 "usePrettyUrl": true,
-                                "link": "https://snps-it.github.io//kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/daolistener"
+                                "link": "https://snps-it.github.io/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/daolistener"
                               },
                               "description": "",
                               "title": "DaoListener",
@@ -46,7 +46,7 @@
                                 "fileName": "it/snps/android/xdbcore/ui/vista/interfaces/clickitemlistener",
                                 "extension": "html",
                                 "usePrettyUrl": true,
-                                "link": "https://snps-it.github.io//kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/clickitemlistener"
+                                "link": "https://snps-it.github.io/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/clickitemlistener"
                               },
                               "description": "",
                               "title": "ClickItemListener",
@@ -62,7 +62,7 @@
                                 "fileName": "it/snps/android/xdbcore/ui/vista/interfaces/actionlistener",
                                 "extension": "html",
                                 "usePrettyUrl": true,
-                                "link": "https://snps-it.github.io//kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/actionlistener"
+                                "link": "https://snps-it.github.io/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/actionlistener"
                               },
                               "description": "",
                               "title": "ActionListener",
@@ -78,7 +78,7 @@
                                 "fileName": "it/snps/android/xdbcore/ui/vista/interfaces/longclickitemlistener",
                                 "extension": "html",
                                 "usePrettyUrl": true,
-                                "link": "https://snps-it.github.io//kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/longclickitemlistener"
+                                "link": "https://snps-it.github.io/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/longclickitemlistener"
                               },
                               "description": "",
                               "title": "LongClickItemListener",
@@ -94,7 +94,7 @@
                                 "fileName": "it/snps/android/xdbcore/ui/vista/interfaces/paginglistener",
                                 "extension": "html",
                                 "usePrettyUrl": true,
-                                "link": "https://snps-it.github.io//kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/paginglistener"
+                                "link": "https://snps-it.github.io/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces/paginglistener"
                               },
                               "description": "",
                               "title": "PagingListener",
@@ -109,7 +109,7 @@
                             "fileName": "it/snps/android/xdbcore/ui/vista/interfaces",
                             "extension": "html",
                             "usePrettyUrl": true,
-                            "link": "https://snps-it.github.io//kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces"
+                            "link": "https://snps-it.github.io/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/interfaces"
                           },
                           "description": "",
                           "title": "it.snps.android.xdbcore.ui.vista.interfaces",
@@ -129,7 +129,7 @@
                                 "fileName": "it/snps/android/xdbcore/ui/vista/builder/vistafragment/builder",
                                 "extension": "html",
                                 "usePrettyUrl": true,
-                                "link": "https://snps-it.github.io//kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/builder/vistafragment/builder"
+                                "link": "https://snps-it.github.io/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/builder/vistafragment/builder"
                               },
                               "description": "",
                               "title": "Builder",
@@ -143,7 +143,7 @@
                               "fileName": "it/snps/android/xdbcore/ui/vista/builder/vistafragment",
                               "extension": "html",
                               "usePrettyUrl": true,
-                              "link": "https://snps-it.github.io//kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/builder/vistafragment"
+                              "link": "https://snps-it.github.io/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/builder/vistafragment"
                             },
                             "description": "",
                             "title": "VistaFragment",
@@ -157,7 +157,7 @@
                             "fileName": "it/snps/android/xdbcore/ui/vista/builder",
                             "extension": "html",
                             "usePrettyUrl": true,
-                            "link": "https://snps-it.github.io//kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/builder"
+                            "link": "https://snps-it.github.io/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/builder"
                           },
                           "description": "",
                           "title": "it.snps.android.xdbcore.ui.vista.builder",
@@ -176,7 +176,7 @@
                                 "fileName": "it/snps/android/xdbcore/ui/vista/model/action",
                                 "extension": "html",
                                 "usePrettyUrl": true,
-                                "link": "https://snps-it.github.io//kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/model/action"
+                                "link": "https://snps-it.github.io/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/model/action"
                               },
                               "description": "",
                               "title": "Action",
@@ -192,7 +192,7 @@
                                 "fileName": "it/snps/android/xdbcore/ui/vista/model/mappercontent",
                                 "extension": "html",
                                 "usePrettyUrl": true,
-                                "link": "https://snps-it.github.io//kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/model/mappercontent"
+                                "link": "https://snps-it.github.io/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/model/mappercontent"
                               },
                               "description": "",
                               "title": "MapperContent",
@@ -207,7 +207,7 @@
                             "fileName": "it/snps/android/xdbcore/ui/vista/model",
                             "extension": "html",
                             "usePrettyUrl": true,
-                            "link": "https://snps-it.github.io//kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/model"
+                            "link": "https://snps-it.github.io/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/model"
                           },
                           "description": "",
                           "title": "it.snps.android.xdbcore.ui.vista.model",
@@ -225,7 +225,7 @@
                               "fileName": "it/snps/android/xdbcore/ui/vista/repository/vistarepository",
                               "extension": "html",
                               "usePrettyUrl": true,
-                              "link": "https://snps-it.github.io//kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/repository/vistarepository"
+                              "link": "https://snps-it.github.io/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/repository/vistarepository"
                             },
                             "description": "",
                             "title": "VistaRepository",
@@ -239,7 +239,7 @@
                             "fileName": "it/snps/android/xdbcore/ui/vista/repository",
                             "extension": "html",
                             "usePrettyUrl": true,
-                            "link": "https://snps-it.github.io//kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/repository"
+                            "link": "https://snps-it.github.io/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista/repository"
                           },
                           "description": "",
                           "title": "it.snps.android.xdbcore.ui.vista.repository",
@@ -254,7 +254,7 @@
                         "fileName": "it/snps/android/xdbcore/ui/vista",
                         "extension": "html",
                         "usePrettyUrl": true,
-                        "link": "https://snps-it.github.io//kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista"
+                        "link": "https://snps-it.github.io/kotlindoc/ui-vista/it/snps/android/xdbcore/ui/vista"
                       },
                       "description": "",
                       "title": "it.snps.android.xdbcore.ui.vista",
@@ -273,7 +273,7 @@
             "fileName": "ui-vista",
             "extension": "html",
             "usePrettyUrl": true,
-            "link": "https://snps-it.github.io//kotlindoc/ui-vista"
+            "link": "https://snps-it.github.io/kotlindoc/ui-vista"
           },
           "description": "",
           "title": "andorid-xdbcore-ui-vista",
@@ -292,7 +292,7 @@
             "fileName": "uivista",
             "extension": "gif",
             "usePrettyUrl": false,
-            "link": "https://snps-it.github.io//assets/media/uivista.gif"
+            "link": "https://snps-it.github.io/assets/media/uivista.gif"
           },
           "description": "",
           "title": "uivista",
@@ -311,7 +311,7 @@
             "fileName": "xdbcore-ui-vista",
             "extension": "html",
             "usePrettyUrl": true,
-            "link": "https://snps-it.github.io//wiki/xdbcore-ui-vista"
+            "link": "https://snps-it.github.io/wiki/xdbcore-ui-vista"
           },
           "description": "",
           "title": "UI Vista",
@@ -325,11 +325,11 @@
           "fileName": "wiki",
           "extension": "html",
           "usePrettyUrl": true,
-          "link": "https://snps-it.github.io//wiki"
+          "link": "https://snps-it.github.io/wiki"
         },
         "description": "",
         "title": "Wiki",
-        "content": "<html>\n <head><\/head>\n <body>\n  <ul> \n   <li><a href=\"https://snps-it.github.io//wiki/xdbcore-ui-vista\">UI Vista<\/a><\/li> \n  <\/ul> \n <\/body>\n<\/html>\n"
+        "content": "<html>\n <head><\/head>\n <body>\n  <ul> \n   <li><a href=\"https://snps-it.github.io/wiki/xdbcore-ui-vista\">UI Vista<\/a><\/li> \n  <\/ul> \n <\/body>\n<\/html>\n"
       }]
     }
   },
@@ -354,7 +354,7 @@
         "fileName": "404",
         "extension": "html",
         "usePrettyUrl": false,
-        "link": "https://snps-it.github.io//404.html"
+        "link": "https://snps-it.github.io/404.html"
       },
       "description": "",
       "title": "Not Found",
