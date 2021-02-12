@@ -1,0 +1,101 @@
+{
+  "ownKey": "wiki",
+  "childrenPages": {"wiki": {
+    "ownKey": "wiki",
+    "childrenPages": {
+      "xdbcore-azioni": {
+        "ownKey": "xdbcore-azioni",
+        "ownPages": [{
+          "reference": {
+            "path": "wiki",
+            "baseUrl": "https://snps-it.github.io",
+            "fileName": "xdbcore-azioni",
+            "extension": "html",
+            "usePrettyUrl": true,
+            "link": "https://snps-it.github.io/wiki/xdbcore-azioni"
+          },
+          "next": {
+            "path": "wiki",
+            "baseUrl": "https://snps-it.github.io",
+            "fileName": "xdbcore-camera",
+            "extension": "html",
+            "usePrettyUrl": true,
+            "link": "https://snps-it.github.io/wiki/xdbcore-camera"
+          },
+          "previous": {
+            "path": "wiki",
+            "baseUrl": "https://snps-it.github.io",
+            "fileName": "xdbcore-ui-vista",
+            "extension": "html",
+            "usePrettyUrl": true,
+            "link": "https://snps-it.github.io/wiki/xdbcore-ui-vista"
+          },
+          "description": "",
+          "title": "Azioni",
+          "content": "<h1 id=\"esecuzione-azioni-di-logica\"><a href=\"#esecuzione-azioni-di-logica\" id=\"esecuzione-azioni-di-logica\" class=\"anchor\"><\/a>Esecuzione azioni di Logica<\/h1>\n<p>Questa libreria permette l'esecuzione delle azioni di Logica da un APP Android.<\/p>\n<p><img src=\"/assets/media/azione.gif\" alt=\"Azioni Library\" /><\/p>\n<p>Vengono gestiti tutti i tipi di domanda attualmente disponibili nel back-end di Logica.<\/p>\n<p>API Doc: <a href=\"https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/azioni/enums/tipodomandaazione\">Tipo Domande Azioni<\/a><\/p>\n<h2 id=\"installazione\"><a href=\"#installazione\" id=\"installazione\" class=\"anchor\"><\/a>Installazione<\/h2>\n<p>Per <strong>Groovy<\/strong><\/p>\n<pre><code class=\"language-groovy\">dependencies {\n    implementation &quot;it.snps:android-xdbcore-azioni:&lt;last-version&gt;&quot;\n}\n<\/code><\/pre>\n<p>Per <strong>Kotlin DSL<\/strong><\/p>\n<pre><code>dependencies {\n    implementation(&quot;it.snps:android-xdbcore-azioni:&lt;last-version&gt;&quot;)\n}\n<\/code><\/pre>\n<h2 id=\"configurazione\"><a href=\"#configurazione\" id=\"configurazione\" class=\"anchor\"><\/a>Configurazione<\/h2>\n<p>La configurazione della libreria avviene tramite il\n<a href=\"https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/azioni/builder/eseguiazione/builder\">EseguiAzione.Builder<\/a>\nche viene fornito al <strong>DialogFragment<\/strong> che si occupa dell'esecuzione dell'azione.<\/p>\n<h3 id=\"esempio\"><a href=\"#esempio\" id=\"esempio\" class=\"anchor\"><\/a>Esempio<\/h3>\n<pre><code class=\"language-kotlin\">val builder = EseguiAzione.Builder()\n            // id dell'azione da eseguire\n            .withAzione(&quot;ID_AZIONE&quot;)\n            // lista di id record sulla quale eseguire la azione\n            .withRecords(listOf(2316))\n            // eventuali azioni da eseguire a seguito di un'operazione su entit� di Logica\n            .withAzioni(listOf(azioni))\n            .build()\n\n        EsecutoreAzioni.newInstance(builder)\n            .show(supportFragmentManager, EsecutoreAzioni.TAG)\n<\/code><\/pre>\n<h2 id=\"interfacce\"><a href=\"#interfacce\" id=\"interfacce\" class=\"anchor\"><\/a>Interfacce<\/h2>\n<p>Tutte le interfacce devono essere implementate dall'activity o fragment che utilizza tale libreria<\/p>\n<h2 id=\"esecutoreazionelistener\"><a href=\"#esecutoreazionelistener\" id=\"esecutoreazionelistener\" class=\"anchor\"><\/a>EsecutoreAzioneListener<\/h2>\n<pre><code class=\"language-kotlin\">interface EsecutoreAzioniListener {\n        fun onAzioneComplete(result: ResultWrapper&lt;XdbCoreAzionePost&gt;)\n    }\n<\/code><\/pre>\n<p>Viene chiamato il metodo <code>onAzioneComplete<\/code> al termine dell'esecuzione della azione con il\nbody della risposta<\/p>\n"
+        }]
+      },
+      "xdbcore-ui-vista": {
+        "ownKey": "xdbcore-ui-vista",
+        "ownPages": [{
+          "reference": {
+            "path": "wiki",
+            "baseUrl": "https://snps-it.github.io",
+            "fileName": "xdbcore-ui-vista",
+            "extension": "html",
+            "usePrettyUrl": true,
+            "link": "https://snps-it.github.io/wiki/xdbcore-ui-vista"
+          },
+          "next": {
+            "path": "wiki",
+            "baseUrl": "https://snps-it.github.io",
+            "fileName": "xdbcore-azioni",
+            "extension": "html",
+            "usePrettyUrl": true,
+            "link": "https://snps-it.github.io/wiki/xdbcore-azioni"
+          },
+          "description": "",
+          "title": "UI Vista",
+          "content": "<h1 id=\"visualizzazione-record-vista-di-logica\"><a href=\"#visualizzazione-record-vista-di-logica\" id=\"visualizzazione-record-vista-di-logica\" class=\"anchor\"><\/a>Visualizzazione record vista di Logica<\/h1>\n<p>Questa libreria permette di visualizzare una lista di record restituiti da una qualsiasi\nvista di Logica.<\/p>\n<p><img src=\"/assets/media/uivista.gif\" alt=\"UI Vista Library\" title=\"UI Vista library\" /><\/p>\n<h2 id=\"installazione\"><a href=\"#installazione\" id=\"installazione\" class=\"anchor\"><\/a>Installazione<\/h2>\n<p>Per <strong>Groovy<\/strong><\/p>\n<pre><code class=\"language-groovy\">dependencies {\n    implementation &quot;it.snps:android-xdbcore-ui-vista:&lt;last-version&gt;&quot;\n    implementation &quot;it.snps:android-common:&lt;last-version&gt;&quot;\n}\n<\/code><\/pre>\n<p>Per <strong>Kotlin DSL<\/strong><\/p>\n<pre><code>dependencies {\n    implementation(&quot;it.snps:android-xdbcore-ui-vista:&lt;last-version&gt;&quot;)\n    implementation(&quot;it.snps:android-common:&lt;last-version&gt;&quot;)\n}\n<\/code><\/pre>\n<h2 id=\"configurazione\"><a href=\"#configurazione\" id=\"configurazione\" class=\"anchor\"><\/a>Configurazione<\/h2>\n<p>La configurazione della libreria avviene tramite il\n<a href=\"https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/builder/vistafragment/builder\">VistaFragment.Builder<\/a>\nche viene fornito al <strong>Fragment<\/strong>\nche si occuper� di effettuare tutte le chiamate alle API di Logica per l'estrazione dei record della Vista fornita.<\/p>\n<h3 id=\"esempio\"><a href=\"#esempio\" id=\"esempio\" class=\"anchor\"><\/a>Esempio<\/h3>\n<pre><code class=\"language-kotlin\">val builder = VistaFragment.Builder&lt;Vista&gt;()\n            // id della vista di Logica\n            .withIdVista(1)\n            // Classe che rappresenta un record\n            .withModel(Vista::class.java)\n            // Eventuale Header titolo\n            .withHeaderTitle(R.string.title)\n            // Map&lt;String, String&gt; da passare alla chiamata API (es: limit=-1)\n            .withQueryMap(emptyMap())\n           // Mostra un FAB con testo e drawable specificato in `Action`\n            .withAction(Action(text = &quot;Aggiungi&quot;,drawable = R.drawable.ic_baseline_add_24)) \n            // Mostra InputEditText per filtrare i risultati\n            .withFilter()\n            // Funzione per conversione oggetto restituito dalle API da fornire alla RecyclerView\n            .withTransformationFunction {\n                MapperContent(\n                    id = it.ID,\n                    caption = it.nome,\n                    title = it.identificativo,\n                    description = &quot;Descrizione&quot;,\n                    counter = it.ID.toString(),\n                    imageUrl = &quot;logo.jpg&quot;,\n                    originalModel = it\n                )\n            }\n            .build()\n\nval vistaFragment = VistaListFragment.newInstance(builder.build())\n\nsupportFragmentManager.beginTransaction()\n       .replace(binding.fragment.id, vistaFragment, VistaListFragment.TAG)\n       .commit()\n<\/code><\/pre>\n<h2 id=\"interfacce\"><a href=\"#interfacce\" id=\"interfacce\" class=\"anchor\"><\/a>Interfacce<\/h2>\n<p>Tutte le interfacce devono essere implementate dall'activity o fragment che utlizzano il\n<strong>Fragment<\/strong> per la visualizzazione dei record di una vista\nqualora vogliano usufruire di alcune operazioni.<\/p>\n<h3 id=\"paginglinster\"><a href=\"#paginglinster\" id=\"paginglinster\" class=\"anchor\"><\/a>PagingLinster<\/h3>\n<p>Da utilizzare qualora si voglia utilizzare la <a href=\"https://developer.android.com/topic/libraries/architecture/paging\">Paging Library<\/a> di Android<\/p>\n<p>API Doc: <a href=\"https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/interfaces/paginglistener\">PagingListener<\/a><\/p>\n<pre><code>    VistaFragment.Builder&lt;Vista&gt;()\n        ...\n        .withPaging()\n        .build()\n<\/code><\/pre>\n<h3 id=\"daolistener\"><a href=\"#daolistener\" id=\"daolistener\" class=\"anchor\"><\/a>DaoListener<\/h3>\n<p>Da utilizzare qualora si voglia estrarre i dati solamente da Database e, in caso di refresh della lista, venga\nfatta una sincronizzazione.<\/p>\n<p>API Doc: <a href=\"https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/interfaces/daolistener\">DaoListener<\/a><\/p>\n<h3 id=\"actionlistener\"><a href=\"#actionlistener\" id=\"actionlistener\" class=\"anchor\"><\/a>ActionListener<\/h3>\n<p>Da utilizzare qualora si voglia visualizzare un FAB per l'esecuzione di un'azione, ES: aggiunger un nuovo elemento alla lista<\/p>\n<p>API Doc: <a href=\"https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/interfaces/actionlistener\">ActionListener<\/a><\/p>\n<pre><code>    VistaFragment.Builder&lt;Vista&gt;()\n        ...\n        .withAction(Action(text = &quot;Aggiungi&quot;,drawable = R.drawable.ic_baseline_add_24))\n        .build()\n<\/code><\/pre>\n<h3 id=\"clickitemlistener\"><a href=\"#clickitemlistener\" id=\"clickitemlistener\" class=\"anchor\"><\/a>ClickItemListener<\/h3>\n<p>Da utilizzare qualora si voglia eseguire qualche operazione al click di un elemento della lista<\/p>\n<p>API Doc: <a href=\"https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/interfaces/clickitemlistener\">ClickItemListener<\/a><\/p>\n<h3 id=\"longclickitemlistener\"><a href=\"#longclickitemlistener\" id=\"longclickitemlistener\" class=\"anchor\"><\/a>LongClickItemListener<\/h3>\n<p>Da utilizzare qualora si voglia gestire il LongClick sull'elemento della lista<\/p>\n<p>API Doc: <a href=\"https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/interfaces/longclickitemlistener\">LongClickItemListener<\/a><\/p>\n"
+        }]
+      },
+      "xdbcore-camera": {
+        "ownKey": "xdbcore-camera",
+        "ownPages": [{
+          "reference": {
+            "path": "wiki",
+            "baseUrl": "https://snps-it.github.io",
+            "fileName": "xdbcore-camera",
+            "extension": "html",
+            "usePrettyUrl": true,
+            "link": "https://snps-it.github.io/wiki/xdbcore-camera"
+          },
+          "previous": {
+            "path": "wiki",
+            "baseUrl": "https://snps-it.github.io",
+            "fileName": "xdbcore-azioni",
+            "extension": "html",
+            "usePrettyUrl": true,
+            "link": "https://snps-it.github.io/wiki/xdbcore-azioni"
+          },
+          "description": "",
+          "title": "Camera",
+          "content": "<h1 id=\"camera\"><a href=\"#camera\" id=\"camera\" class=\"anchor\"><\/a>Camera<\/h1>\n<p>Questa libreria permette l'avvio di un activity adibita per l'avvio della fotocamera\ncustomizzata.<\/p>\n<p><img src=\"/assets/media/camera.gif\" alt=\"Camera\" /><\/p>\n<p>Vengono gestite tre tipologie di funzioni per la fotocamera:<\/p>\n<ul>\n<li>Semplice foto<\/li>\n<li>Riconoscimento del testo<\/li>\n<li>Lettura Barcode e QRCode<\/li>\n<\/ul>\n<h2 id=\"installazione\"><a href=\"#installazione\" id=\"installazione\" class=\"anchor\"><\/a>Installazione<\/h2>\n<p>Per <strong>Groovy<\/strong><\/p>\n<pre><code class=\"language-groovy\">dependencies {\n    implementation &quot;it.snps:android-xdbcore-camera:&lt;last-version&gt;&quot;\n}\n<\/code><\/pre>\n<p>Per <strong>Kotlin DSL<\/strong><\/p>\n<pre><code>dependencies {\n    implementation(&quot;it.snps:android-xdbcore-camera:&lt;last-version&gt;&quot;)\n}\n<\/code><\/pre>\n<h2 id=\"configurazione\"><a href=\"#configurazione\" id=\"configurazione\" class=\"anchor\"><\/a>Configurazione<\/h2>\n<p>La configurazione della libreria avviene allo stesso modo di come si vuole avviare\nun'altra activity in Android con il passaggio dell'intent contenente la tipologia di funzione che si vuole eseguire:<\/p>\n<pre><code class=\"language-kotlin\">// Lanciare l'activity per semplice foto\nbinding.simplePhoto.setOnClickListener {\n    startActivityForResult(Intent(this, CameraActivity::class.java).apply {\n        putExtra(CameraActivity.EXTRA_CAMERA_FUNCTION, CameraFunction.SIMPLE_PHOTO)\n    }, REQUEST_CODE)\n}\n\n// Lanciare l'activity per riconoscimento testo\nbinding.recognition.setOnClickListener {\n    startActivityForResult(Intent(this, CameraActivity::class.java).apply {\n        putExtra(CameraActivity.EXTRA_CAMERA_FUNCTION, CameraFunction.TEXT_RECOGNIZE)\n    }, REQUEST_CODE)\n}\n\n// Lanciare l'activity per lettura barcode/qrcode\nbinding.barcode.setOnClickListener {\n    startActivityForResult(Intent(this, CameraActivity::class.java).apply {\n        putExtra(CameraActivity.EXTRA_CAMERA_FUNCTION, CameraFunction.BARCODE)\n    }, REQUEST_CODE)\n}\n<\/code><\/pre>\n<p>Al completamento della funzione richiesta viene richiamata l'activity chiamante tramite il\n<code>setResult(...)<\/code>, bisogna necessario gestire il risultato proveniente dalla libreria.<\/p>\n<p>Per le tipologie di funzioni disponibili consultare <a href=\"https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/camera/utils/camerafunction\">Camera Function<\/a><\/p>\n<h2 id=\"gestione-risultato\"><a href=\"#gestione-risultato\" id=\"gestione-risultato\" class=\"anchor\"><\/a>Gestione risultato<\/h2>\n<p>Per la gestione del risultato proveniente dalla libreria basta sovrascrivere il metodo\n<code>onActivityResult()<\/code>.<\/p>\n<p>La libreria aggiunge come intent di risposta i seguenti dati:<\/p>\n<ul>\n<li>CameraActivity.EXTRA_BITMAP_PATH<\/li>\n<li>CameraActivity.EXTRA_GENERIC_TEXT_RECOGNIZED<\/li>\n<li>CameraActivity.EXTRA_MAIN_TEXT_RECOGNIZED<\/li>\n<\/ul>\n<h3 id=\"cameraactivityextra-bitmap-path\"><a href=\"#cameraactivityextra-bitmap-path\" id=\"cameraactivityextra-bitmap-path\" class=\"anchor\"><\/a>CameraActivity.EXTRA_BITMAP_PATH<\/h3>\n<p>Con questo dato viene fornito l'URI della foto scattata.<\/p>\n<p>Tale dato viene fornito per tutte le funzioni ad eccetto della funzione <code>CameraFunction.BARCODE<\/code> in\nquanto con questa funzione non viene scattata nessuna foto ma vengono processati i vari frame\nfino a quando non risulta esserci un risultato nella lettura del Barcode/QRCode<\/p>\n<h3 id=\"cameraactivityextra-genericmain-text-recognition\"><a href=\"#cameraactivityextra-genericmain-text-recognition\" id=\"cameraactivityextra-genericmain-text-recognition\" class=\"anchor\"><\/a>CameraActivity.EXTRA_[GENERIC/MAIN]_TEXT_RECOGNITION<\/h3>\n<p>Con questo dato viene fornito il testo riconosciuto. Viene suddiviso in due categorie:<\/p>\n<ul>\n<li>GENERIC<\/li>\n<li>MAIN<\/li>\n<\/ul>\n<p>Per <strong>GENERIC<\/strong> si intende tutto il testo presente nella foto scattato. Anche quello presente in <strong>MAIN<\/strong>.<\/p>\n<p>Per <strong>MAIN<\/strong> si intente il testo presente all'interno del rettangolo presente nell'activity.<\/p>\n<p>Nel caso in cui viene chiamata la libreria con la funzione <code>CameraFunction.BARCODE<\/code> viene restituito\nsolamente il dato <strong>GENERIC<\/strong><\/p>\n"
+        }]
+      }
+    },
+    "ownPages": [{
+      "reference": {
+        "path": "",
+        "baseUrl": "https://snps-it.github.io",
+        "fileName": "wiki",
+        "extension": "html",
+        "usePrettyUrl": true,
+        "link": "https://snps-it.github.io/wiki"
+      },
+      "description": "",
+      "title": "Wiki",
+      "content": "<html>\n <head><\/head>\n <body>\n  <ul> \n   <li><a href=\"https://snps-it.github.io/wiki/xdbcore-ui-vista\">UI Vista<\/a><\/li> \n   <li><a href=\"https://snps-it.github.io/wiki/xdbcore-azioni\">Azioni<\/a><\/li> \n   <li><a href=\"https://snps-it.github.io/wiki/xdbcore-camera\">Camera<\/a><\/li> \n  <\/ul> \n <\/body>\n<\/html>\n"
+    }]
+  }}
+}

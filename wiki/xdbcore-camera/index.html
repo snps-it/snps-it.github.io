@@ -1,0 +1,593 @@
+<!DOCTYPE HTML>
+<!--
+    Editorial by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+
+
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 0.21.0"/>
+<link rel="icon" href="https://snps-it.github.io/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>Camera</title>
+
+
+<meta name="description" content="Librerie Android">
+
+
+
+<link rel="prev" href="https://snps-it.github.io/wiki/xdbcore-azioni">
+
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://snps-it.github.io/Editorial/c88496da/assets/css/editorial_main.css"  />
+<link rel="stylesheet" type="text/css" href="https://snps-it.github.io/Editorial/c88496da/assets/css/editorial_orchidCustomizations.css"  />
+<link rel="stylesheet" type="text/css" href="https://snps-it.github.io/Editorial/c88496da/assets/css/orchidSearch.css"  />
+<link rel="stylesheet" type="text/css" href="https://snps-it.github.io/assets/css/orchidSearch.css"  />
+<!-- end:inject styles -->
+
+
+
+
+
+<!-- start:debug info -->
+
+<!-- THEME -->
+<!-- Type: Editorial -->
+<!-- Class: com.eden.orchid.editorial.EditorialTheme -->
+
+<!-- PAGE -->
+<!-- Type: wiki -->
+<!-- Class: com.eden.orchid.wiki.pages.WikiPage -->
+<!-- Layout: index -->
+<!-- Resolved Layout: templates/layouts/index.peb -->
+<!-- Page Template: wiki, page -->
+<!-- Resolved Page Template: templates/pages/page.peb -->
+
+<!-- RESOURCE -->
+<!-- Class: com.eden.orchid.api.resources.resource.FileResource -->
+<!-- Source Filename: wiki/xdbcore-camera.md -->
+
+<!-- COMPLETE PAGE CONFIGURATION -->
+<script>
+    window.allData = {"reference":{"path":"wiki","baseUrl":"https://snps-it.github.io","fileName":"xdbcore-camera","extension":"html","usePrettyUrl":true,"link":"https://snps-it.github.io/wiki/xdbcore-camera"},"previous":{"path":"wiki","baseUrl":"https://snps-it.github.io","fileName":"xdbcore-azioni","extension":"html","usePrettyUrl":true,"link":"https://snps-it.github.io/wiki/xdbcore-azioni"},"description":"","title":"Camera"};
+</script>
+
+<!-- end:debug info -->
+
+
+
+<script>
+    window.site = {"orchidVersion":"0.21.0","baseUrl":"https://snps-it.github.io","environment":"debug","version":"1.0.0"};
+</script>
+
+
+    <!-- start:inject meta-components [head] -->
+    
+
+        
+            
+        
+
+        
+            
+        
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+    <!-- start:inject meta-components [head] -->
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+
+
+
+
+</head>
+<body class="is-loading">
+
+
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+
+            <!-- Header -->
+            
+                <header id="header">
+    <a href="https://snps-it.github.io" class="logo">XDBCore Logica Android</a>
+    <ul class="icons">
+    
+    
+        <li>
+            <a href="https://github.com/snps-it/xdbcore-logica-android" class="icon fa-github">
+                <span class="label">github</span>
+            </a>
+        </li>
+    
+    
+    </ul>
+</header>
+
+            
+            
+            
+            
+                <section id="pageContent">
+                    <header class="major"><h2>Camera</h2></header>
+                    <article>
+                        
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        <h1 id="camera"><a href="#camera" id="camera" class="anchor"></a>Camera</h1>
+<p>Questa libreria permette l'avvio di un activity adibita per l'avvio della fotocamera
+customizzata.</p>
+<p><img src="/assets/media/camera.gif" alt="Camera" /></p>
+<p>Vengono gestite tre tipologie di funzioni per la fotocamera:</p>
+<ul>
+<li>Semplice foto</li>
+<li>Riconoscimento del testo</li>
+<li>Lettura Barcode e QRCode</li>
+</ul>
+<h2 id="installazione"><a href="#installazione" id="installazione" class="anchor"></a>Installazione</h2>
+<p>Per <strong>Groovy</strong></p>
+<pre><code class="language-groovy">dependencies {
+    implementation &quot;it.snps:android-xdbcore-camera:&lt;last-version&gt;&quot;
+}
+</code></pre>
+<p>Per <strong>Kotlin DSL</strong></p>
+<pre><code>dependencies {
+    implementation(&quot;it.snps:android-xdbcore-camera:&lt;last-version&gt;&quot;)
+}
+</code></pre>
+<h2 id="configurazione"><a href="#configurazione" id="configurazione" class="anchor"></a>Configurazione</h2>
+<p>La configurazione della libreria avviene allo stesso modo di come si vuole avviare
+un'altra activity in Android con il passaggio dell'intent contenente la tipologia di funzione che si vuole eseguire:</p>
+<pre><code class="language-kotlin">// Lanciare l'activity per semplice foto
+binding.simplePhoto.setOnClickListener {
+    startActivityForResult(Intent(this, CameraActivity::class.java).apply {
+        putExtra(CameraActivity.EXTRA_CAMERA_FUNCTION, CameraFunction.SIMPLE_PHOTO)
+    }, REQUEST_CODE)
+}
+
+// Lanciare l'activity per riconoscimento testo
+binding.recognition.setOnClickListener {
+    startActivityForResult(Intent(this, CameraActivity::class.java).apply {
+        putExtra(CameraActivity.EXTRA_CAMERA_FUNCTION, CameraFunction.TEXT_RECOGNIZE)
+    }, REQUEST_CODE)
+}
+
+// Lanciare l'activity per lettura barcode/qrcode
+binding.barcode.setOnClickListener {
+    startActivityForResult(Intent(this, CameraActivity::class.java).apply {
+        putExtra(CameraActivity.EXTRA_CAMERA_FUNCTION, CameraFunction.BARCODE)
+    }, REQUEST_CODE)
+}
+</code></pre>
+<p>Al completamento della funzione richiesta viene richiamata l'activity chiamante tramite il
+<code>setResult(...)</code>, bisogna necessario gestire il risultato proveniente dalla libreria.</p>
+<p>Per le tipologie di funzioni disponibili consultare <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/camera/utils/camerafunction">Camera Function</a></p>
+<h2 id="gestione-risultato"><a href="#gestione-risultato" id="gestione-risultato" class="anchor"></a>Gestione risultato</h2>
+<p>Per la gestione del risultato proveniente dalla libreria basta sovrascrivere il metodo
+<code>onActivityResult()</code>.</p>
+<p>La libreria aggiunge come intent di risposta i seguenti dati:</p>
+<ul>
+<li>CameraActivity.EXTRA_BITMAP_PATH</li>
+<li>CameraActivity.EXTRA_GENERIC_TEXT_RECOGNIZED</li>
+<li>CameraActivity.EXTRA_MAIN_TEXT_RECOGNIZED</li>
+</ul>
+<h3 id="cameraactivityextra-bitmap-path"><a href="#cameraactivityextra-bitmap-path" id="cameraactivityextra-bitmap-path" class="anchor"></a>CameraActivity.EXTRA_BITMAP_PATH</h3>
+<p>Con questo dato viene fornito l'URI della foto scattata.</p>
+<p>Tale dato viene fornito per tutte le funzioni ad eccetto della funzione <code>CameraFunction.BARCODE</code> in
+quanto con questa funzione non viene scattata nessuna foto ma vengono processati i vari frame
+fino a quando non risulta esserci un risultato nella lettura del Barcode/QRCode</p>
+<h3 id="cameraactivityextra-genericmain-text-recognition"><a href="#cameraactivityextra-genericmain-text-recognition" id="cameraactivityextra-genericmain-text-recognition" class="anchor"></a>CameraActivity.EXTRA_[GENERIC/MAIN]_TEXT_RECOGNITION</h3>
+<p>Con questo dato viene fornito il testo riconosciuto. Viene suddiviso in due categorie:</p>
+<ul>
+<li>GENERIC</li>
+<li>MAIN</li>
+</ul>
+<p>Per <strong>GENERIC</strong> si intende tutto il testo presente nella foto scattato. Anche quello presente in <strong>MAIN</strong>.</p>
+<p>Per <strong>MAIN</strong> si intente il testo presente all'interno del rettangolo presente nell'activity.</p>
+<p>Nel caso in cui viene chiamata la libreria con la funzione <code>CameraFunction.BARCODE</code> viene restituito
+solamente il dato <strong>GENERIC</strong></p>
+
+                    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+                    </article>
+                </section>
+            
+        </div>
+        <hr>
+
+        <!-- Page Footer -->
+        <div class="inner">
+    <footer id="footer">
+        <div class="clearfix">
+            
+                <div class="float-left">
+                    <a href="https://snps-it.github.io/wiki/xdbcore-azioni" class="button special small pill">
+                        <span>&larr;</span> Azioni
+                    </a>
+                </div>
+            
+            
+        </div>
+    </footer>
+</div>
+
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+    <div class="inner">
+
+        <!-- Search -->
+        <section id="search" class="alt">
+            <form data-orchid-search="">
+                <input type="text" name="query" id="query" placeholder="Search"/>
+            </form>
+            <div class="box" id="search-results" data-orchid-search-results style="display: none;">
+                <b>Search Results</b>
+                <ul></ul>
+            </div>
+            <div class="box" id="search-progress" data-orchid-search-progress style="display: none;">
+                <div class="loader">Loading...</div>
+            </div>
+        </section>
+
+        <!-- Menu -->
+        <nav id="siteNav" class="menu">
+            <header class="major">
+                <h2>XDBCore Logica Android</h2>
+            </header>
+            <ul class="top-level">
+                
+                    
+    
+    <li>
+        <a class="subheader">Wiki</a>
+    </li>
+    
+
+                
+                    
+    
+    <li>
+        <a href="https://snps-it.github.io/wiki/xdbcore-ui-vista">UI Vista</a>
+    </li>
+    
+
+                
+                    
+    
+    <li>
+        <a href="https://snps-it.github.io/wiki/xdbcore-azioni">Azioni</a>
+    </li>
+    
+
+                
+                    
+    
+    <li>
+        <a href="https://snps-it.github.io/wiki/xdbcore-camera">Camera</a>
+    </li>
+    
+
+                
+                    
+    
+    <li>
+        <a class="subheader">API Docs</a>
+    </li>
+    
+
+                
+                    
+    <li>
+        <span class="opener">Classes</span>
+        <ul>
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/model/action">Action</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/interfaces/actionlistener">ActionListener</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/azioni/repository/azionerepository">AzioneRepository</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/azioni/remote/azioneservice">AzioneService</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/camera/analyzer/barcodeanalyzer">BarcodeAnalyzer</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/azioni/builder/eseguiazione/builder">Builder</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/builder/vistafragment/builder">Builder</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/camera/utils/camerafunction">CameraFunction</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/interfaces/clickitemlistener">ClickItemListener</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/interfaces/daolistener">DaoListener</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/azioni/builder/eseguiazione">EseguiAzione</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/camera/textrecognition/logicatextrecognition">LogicaTextRecognition</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/camera/interactors/logicatextrecognitionimpl">LogicaTextRecognitionImpl</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/interfaces/longclickitemlistener">LongClickItemListener</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/model/mappercontent">MapperContent</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/camera/analyzer/barcodeanalyzer/onbarcodelistener">OnBarcodeListener</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/camera/interfaces/oncameralistener">OnCameraListener</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/interfaces/paginglistener">PagingListener</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/camera/textrecognition/textrecognitioninterface">TextRecognitionInterface</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/azioni/enums/tipodomandaazione">TipoDomandaAzione</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/camera/textrecognition/logicatextrecognition/typerecognition">TypeRecognition</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/builder/vistafragment">VistaFragment</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/repository/vistarepository">VistaRepository</a>
+    </li>
+    
+
+        
+        </ul>
+    </li>
+
+                
+            </ul>
+        </nav>
+        
+
+        <!-- Section -->
+        <section>
+            <p class="text-center">
+                Currently 1.0.0. Created with <a href="https://orchid.run">Orchid </a> and <b>Orchid Editorial Theme</b>.
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p class="copyright text-center">&copy; XDBCore Logica Android. All rights reserved.<br>Design by <a href="https://html5up.net">HTML5 UP</a></p>
+        </footer>
+
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+
+<!-- start:inject scripts -->
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+<script  src="https://snps-it.github.io/Editorial/c88496da/assets/js/editorial_util.js"></script>
+<script  src="https://snps-it.github.io/Editorial/c88496da/assets/js/editorial_main.js"></script>
+<script  src="https://snps-it.github.io/Editorial/c88496da/assets/js/editorial_orchidCustomizations.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script  src="https://unpkg.com/lunr/lunr.js"></script>
+<script  src="https://snps-it.github.io/assets/js/orchidSearch.js"></script>
+<!-- end:inject scripts -->
+
+
+</body>
+</html>

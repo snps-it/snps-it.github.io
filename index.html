@@ -1,0 +1,569 @@
+<!DOCTYPE HTML>
+<!--
+    Editorial by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+
+
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 0.21.0"/>
+<link rel="icon" href="https://snps-it.github.io/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>Home</title>
+
+
+<meta name="description" content="Librerie Android">
+
+
+
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://snps-it.github.io/Editorial/c88496da/assets/css/editorial_main.css"  />
+<link rel="stylesheet" type="text/css" href="https://snps-it.github.io/Editorial/c88496da/assets/css/editorial_orchidCustomizations.css"  />
+<link rel="stylesheet" type="text/css" href="https://snps-it.github.io/Editorial/c88496da/assets/css/orchidSearch.css"  />
+<link rel="stylesheet" type="text/css" href="https://snps-it.github.io/assets/css/orchidSearch.css"  />
+<!-- end:inject styles -->
+
+
+
+
+
+<!-- start:debug info -->
+
+<!-- THEME -->
+<!-- Type: Editorial -->
+<!-- Class: com.eden.orchid.editorial.EditorialTheme -->
+
+<!-- PAGE -->
+<!-- Type: frontPage -->
+<!-- Class: com.eden.orchid.impl.generators.HomepageGenerator$Homepage -->
+<!-- Layout: index -->
+<!-- Resolved Layout: templates/layouts/index.peb -->
+<!-- Page Template: frontPage, page -->
+<!-- Resolved Page Template: templates/pages/page.peb -->
+
+<!-- RESOURCE -->
+<!-- Class: com.eden.orchid.api.resources.resource.FileResource -->
+<!-- Source Filename: homepage.md -->
+
+<!-- COMPLETE PAGE CONFIGURATION -->
+<script>
+    window.allData = {"reference":{"path":"","baseUrl":"https://snps-it.github.io","fileName":"","extension":"html","usePrettyUrl":true,"link":"https://snps-it.github.io"},"description":"","title":"Home"};
+</script>
+
+<!-- end:debug info -->
+
+
+
+<script>
+    window.site = {"orchidVersion":"0.21.0","baseUrl":"https://snps-it.github.io","environment":"debug","version":"1.0.0"};
+</script>
+
+
+    <!-- start:inject meta-components [head] -->
+    
+
+        
+            
+        
+
+        
+            
+        
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+    <!-- start:inject meta-components [head] -->
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+
+
+
+
+</head>
+<body class="is-loading">
+
+
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+
+            <!-- Header -->
+            
+                <header id="header">
+    <a href="https://snps-it.github.io" class="logo">XDBCore Logica Android</a>
+    <ul class="icons">
+    
+    
+        <li>
+            <a href="https://github.com/snps-it/xdbcore-logica-android" class="icon fa-github">
+                <span class="label">github</span>
+            </a>
+        </li>
+    
+    
+    </ul>
+</header>
+
+            
+            
+            
+            
+                <section id="pageContent">
+                    <header class="major"><h2>Home</h2></header>
+                    <article>
+                        
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        
+                    
+                
+            
+        
+            
+                
+                    
+                        <div class="component component-readme component-order-0">
+                            <h1 id="xdbcore-logica-android"><a href="#xdbcore-logica-android" id="xdbcore-logica-android" class="anchor"></a>XDBCore Logica Android</h1>
+<p>Raccolta di librerie per lo sviluppo di applicazioni Android per Logica</p>
+<h3 id="publishing"><a href="#publishing" id="publishing" class="anchor"></a>Publishing</h3>
+<p>Le librerie raccolte in questo progetto sono pronte per essere pubblicate nel repository di Nexus di Sinapsi.</p>
+<p>Per procedere alla pubblicazione di tali librerie bisogna che all'interno del progetto sia presente il file <code>settings.properties</code> contenente le informazioni necessarie per la pubblicazione e il download delle librerie dal repository Nexus</p>
+<p>Il contenuto di tale file � composto da coppie <strong>chiave-valore</strong> come da esempio:</p>
+<pre><code>nexusRepoReleases=[url repository di RELEASE]  
+nexusRepoSnapshots=[url repository di SNAPSHOTS]
+nexusUsername=[username per l'autenticazione al repository]
+nexusPassword=[password per l'autenticazione al repository]
+</code></pre>
+<h3 id="download-delle-librerie-da-repository-nexus"><a href="#download-delle-librerie-da-repository-nexus" id="download-delle-librerie-da-repository-nexus" class="anchor"></a>Download delle librerie da repository Nexus</h3>
+<p>Per poter effettuare il download delle librerie dal repository Nexus bisogna per prima cosa assicurarsi di aver inserito nella <code>root</code> del progetto il file <code>settings.properties</code>.</p>
+<h4 id="settingsproperties"><a href="#settingsproperties" id="settingsproperties" class="anchor"></a>settings.properties</h4>
+<p>Il contenuto del file deve essere come segue:</p>
+<pre><code>nexusRepoPublic=[url repository public]
+nexusUsername=[username per l'autenticazione al repository]
+nexusPassword=[password per l'autenticazione al repository]
+</code></pre>
+<h4 id="buildgradlekts-project-level"><a href="#buildgradlekts-project-level" id="buildgradlekts-project-level" class="anchor"></a>build.gradle.kts project level</h4>
+<p>All'interno del file <code>build.gradle.kts</code> bisogna andare ad indicare il repository Nexus dalla quale effettuare il download delle librerie pubblicate in precedenza:</p>
+<pre><code>// getting properties of Nexus repository
+val fileProp = java.io.FileInputStream(&quot;$rootDir/settings.properties&quot;)
+val prop = java.util.Properties()
+prop.load(fileProp)
+
+allprojects {
+    repositories {
+        ...
+        maven {
+            url = uri(prop.getProperty(&quot;nexusRepoPublic&quot;))
+            credentials {
+                username = prop.getProperty(&quot;nexusUsername&quot;)
+                password = prop.getProperty(&quot;nexusPassword&quot;)
+            }
+
+            authentication {
+                create&lt;BasicAuthentication&gt;(&quot;basic&quot;)
+            }
+        }
+    }
+}
+</code></pre>
+<h4 id="buildgradlekts-module-level"><a href="#buildgradlekts-module-level" id="buildgradlekts-module-level" class="anchor"></a>build.gradle.kts module level</h4>
+<p>All'interno di ogni <code>build.gradle.kts</code> presente nel modulo inserire nella sezione <code>dependencies</code> l'url della libreria da scaricare con la relativa versione, esempio:
+<code>implementation(&quot;it.snps:[library]:[versione]&quot;)</code></p>
+
+                        </div>
+                    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+                    </article>
+                </section>
+            
+        </div>
+        <hr>
+
+        <!-- Page Footer -->
+        <div class="inner">
+    <footer id="footer">
+        <div class="clearfix">
+            
+            
+        </div>
+    </footer>
+</div>
+
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+    <div class="inner">
+
+        <!-- Search -->
+        <section id="search" class="alt">
+            <form data-orchid-search="">
+                <input type="text" name="query" id="query" placeholder="Search"/>
+            </form>
+            <div class="box" id="search-results" data-orchid-search-results style="display: none;">
+                <b>Search Results</b>
+                <ul></ul>
+            </div>
+            <div class="box" id="search-progress" data-orchid-search-progress style="display: none;">
+                <div class="loader">Loading...</div>
+            </div>
+        </section>
+
+        <!-- Menu -->
+        <nav id="siteNav" class="menu">
+            <header class="major">
+                <h2>XDBCore Logica Android</h2>
+            </header>
+            <ul class="top-level">
+                
+                    
+    
+    <li>
+        <a class="subheader">Wiki</a>
+    </li>
+    
+
+                
+                    
+    
+    <li>
+        <a href="https://snps-it.github.io/wiki/xdbcore-ui-vista">UI Vista</a>
+    </li>
+    
+
+                
+                    
+    
+    <li>
+        <a href="https://snps-it.github.io/wiki/xdbcore-azioni">Azioni</a>
+    </li>
+    
+
+                
+                    
+    
+    <li>
+        <a href="https://snps-it.github.io/wiki/xdbcore-camera">Camera</a>
+    </li>
+    
+
+                
+                    
+    
+    <li>
+        <a class="subheader">API Docs</a>
+    </li>
+    
+
+                
+                    
+    <li>
+        <span class="opener">Classes</span>
+        <ul>
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/model/action">Action</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/interfaces/actionlistener">ActionListener</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/azioni/repository/azionerepository">AzioneRepository</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/azioni/remote/azioneservice">AzioneService</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/camera/analyzer/barcodeanalyzer">BarcodeAnalyzer</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/azioni/builder/eseguiazione/builder">Builder</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/builder/vistafragment/builder">Builder</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/camera/utils/camerafunction">CameraFunction</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/interfaces/clickitemlistener">ClickItemListener</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/interfaces/daolistener">DaoListener</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/azioni/builder/eseguiazione">EseguiAzione</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/camera/textrecognition/logicatextrecognition">LogicaTextRecognition</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/camera/interactors/logicatextrecognitionimpl">LogicaTextRecognitionImpl</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/interfaces/longclickitemlistener">LongClickItemListener</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/model/mappercontent">MapperContent</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/camera/analyzer/barcodeanalyzer/onbarcodelistener">OnBarcodeListener</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/camera/interfaces/oncameralistener">OnCameraListener</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/interfaces/paginglistener">PagingListener</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/camera/textrecognition/textrecognitioninterface">TextRecognitionInterface</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/azioni/enums/tipodomandaazione">TipoDomandaAzione</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/camera/textrecognition/logicatextrecognition/typerecognition">TypeRecognition</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/builder/vistafragment">VistaFragment</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://snps-it.github.io/kotlindoc/api-doc-modules/it/snps/android/xdbcore/ui/vista/repository/vistarepository">VistaRepository</a>
+    </li>
+    
+
+        
+        </ul>
+    </li>
+
+                
+            </ul>
+        </nav>
+        
+
+        <!-- Section -->
+        <section>
+            <p class="text-center">
+                Currently 1.0.0. Created with <a href="https://orchid.run">Orchid </a> and <b>Orchid Editorial Theme</b>.
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p class="copyright text-center">&copy; XDBCore Logica Android. All rights reserved.<br>Design by <a href="https://html5up.net">HTML5 UP</a></p>
+        </footer>
+
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+
+<!-- start:inject scripts -->
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+<script  src="https://snps-it.github.io/Editorial/c88496da/assets/js/editorial_util.js"></script>
+<script  src="https://snps-it.github.io/Editorial/c88496da/assets/js/editorial_main.js"></script>
+<script  src="https://snps-it.github.io/Editorial/c88496da/assets/js/editorial_orchidCustomizations.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script  src="https://unpkg.com/lunr/lunr.js"></script>
+<script  src="https://snps-it.github.io/assets/js/orchidSearch.js"></script>
+<!-- end:inject scripts -->
+
+
+</body>
+</html>
